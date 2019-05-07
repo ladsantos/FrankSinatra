@@ -45,8 +45,8 @@ class BinarySystem(object):
         Eccentricity of the orbit. Default is 0 (circular orbit).
 
     orbital_period : ``astropy.Quantity``, optional
-        The orbital period. If not provided, then the semi-major axis of the
-        orbit needs to be provided.
+        Orbital period. If not provided, then the semi-major axis of the orbit
+        needs to be provided.
 
     semi_major_axis : ``astropy.Quantity``, optional
         Semi-major axis of the orbit. If not provided, then the orbital period
@@ -153,7 +153,7 @@ class BinarySystem(object):
         Returns
         -------
         rvs : ``astropy.Quantity`` or ``numpy.ndarray``
-            Radial velocities.
+            Radial velocity.
         """
         if isinstance(ts, t.Time):
             ts = np.array([ts.jd])
